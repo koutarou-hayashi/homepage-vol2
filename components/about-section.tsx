@@ -61,9 +61,7 @@ export function AboutSection() {
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
                   <dt className="font-bold text-muted-foreground">事業内容</dt>
                   <dd className="sm:col-span-2">
-                    システム開発、Webサービス開発、
-                    <br />
-                    ITコンサルティング、クラウドソリューション
+                    測量業務、調査業務、システム開発
                   </dd>
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
