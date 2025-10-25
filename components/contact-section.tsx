@@ -15,6 +15,7 @@ export function ContactSection() {
     name: "",
     email: "",
     phone: "",
+    inquiryType: "",
     message: "",
   })
 
@@ -44,8 +45,8 @@ export function ContactSection() {
                     </div>
                     <div>
                       <h3 className="font-bold mb-2">お電話でのお問い合わせ</h3>
-                      <p className="text-2xl font-bold mb-1">03-1234-5678</p>
-                      <p className="text-sm text-muted-foreground">平日 9:00 - 18:00</p>
+                      <p className="text-2xl font-bold mb-1">0572-44-9431</p>
+                      <p className="text-sm text-muted-foreground">平日 8:30 - 17:30</p>
                     </div>
                   </div>
                 </CardContent>
@@ -59,7 +60,7 @@ export function ContactSection() {
                     </div>
                     <div>
                       <h3 className="font-bold mb-2">メールでのお問い合わせ</h3>
-                      <p className="text-sm break-all">info@sample-company.co.jp</p>
+                      <p className="text-sm break-all">sokuten8843koutarou@gmail.com</p>
                       <p className="text-sm text-muted-foreground mt-2">24時間受付</p>
                     </div>
                   </div>
@@ -102,6 +103,22 @@ export function ContactSection() {
                       onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                       placeholder="03-1234-5678"
                     />
+                  </div>
+
+                  <div className="space-y-2">
+                    <Label htmlFor="inquiryType">お問い合わせ種類</Label>
+                    <select
+                      id="inquiryType"
+                      value={formData.inquiryType}
+                      onChange={(e) => setFormData({ ...formData, inquiryType: e.target.value })}
+                      className="block w-full rounded-md border border-input bg-background px-3 py-2 text-sm shadow-sm focus:outline-none focus:ring-1 focus:ring-ring disabled:cursor-not-allowed disabled:opacity-50"
+                    >
+                      <option value="" disabled>選択してください</option>
+                      <option value="依頼">依頼</option>
+                      <option value="相談">相談</option>
+                      <option value="見積もり">見積もり</option>
+                      <option value="その他">その他</option>
+                    </select>
                   </div>
 
                   <div className="space-y-2">
