@@ -6,11 +6,9 @@ export function Footer() {
           <div>
             <h3 className="text-xl font-bold mb-4">株式会社 測天</h3>
             <p className="text-sm text-primary-foreground/80">
-              〒100-0001
+              〒507-0053
               <br />
-              東京都千代田区千代田1-1-1
-              <br />
-              サンプルビル10F
+              岐阜県多治見市若松町2-5
             </p>
           </div>
 

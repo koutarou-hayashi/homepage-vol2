@@ -69,9 +69,9 @@ export function AboutSection() {
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
                   <dt className="font-bold text-muted-foreground">所在地</dt>
                   <dd className="sm:col-span-2">
-                    〒100-0001
+                    〒507-0053
                     <br />
-                    東京都千代田区千代田1-1-1 サンプルビル10F
+                    岐阜県多治見市若松町2-5
                   </dd>
                 </div>
               </dl>
