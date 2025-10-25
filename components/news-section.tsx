@@ -2,23 +2,23 @@ import { Card, CardHeader, CardTitle } from "@/components/ui/card"
 import { Calendar } from "lucide-react"
 
 const newsItems = [
+  // {
+  //   date: "2025.01.15",
+  //   category: "プレスリリース",
+  //   title: "新サービス「○○○○」をリリースしました",
+  // },
+  // {
+  //   date: "2025.01.10",
+  //   category: "お知らせ",
+  //   title: "年末年始休業のお知らせ",
+  // },
+  // {
+  //   date: "2024.12.20",
+  //   category: "イベント",
+  //   title: "展示会「○○○○2025」に出展いたします",
+  // },
   {
-    date: "2025.01.15",
-    category: "プレスリリース",
-    title: "新サービス「○○○○」をリリースしました",
-  },
-  {
-    date: "2025.01.10",
-    category: "お知らせ",
-    title: "年末年始休業のお知らせ",
-  },
-  {
-    date: "2024.12.20",
-    category: "イベント",
-    title: "展示会「○○○○2025」に出展いたします",
-  },
-  {
-    date: "2024.12.15",
+    date: "2025.12.15", // 修正箇所（日程）
     category: "プレスリリース",
     title: "新オフィス開設のお知らせ",
   },
