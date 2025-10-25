@@ -45,7 +45,7 @@ export function AboutSection() {
               <dl className="space-y-6">
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
                   <dt className="font-bold text-muted-foreground">会社名</dt>
-                  <dd className="sm:col-span-2">株式会社サンプル</dd>
+                  <dd className="sm:col-span-2">株式会社 測天</dd>
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
                   <dt className="font-bold text-muted-foreground">設立</dt>

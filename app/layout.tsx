@@ -8,9 +8,9 @@ const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "株式会社サンプル | 企業ホームページ",
+  title: "株式会社 測天 | 企業ホームページ",
   description:
-    "株式会社サンプルの公式ホームページ。システム開発、クラウドソリューション、ITコンサルティングなど、最先端の技術とサービスを提供しています。",
+    "株式会社 測天の公式ホームページ。システム開発、クラウドソリューション、ITコンサルティングなど、最先端の技術とサービスを提供しています。",
   generator: "v0.app",
 }
 

@@ -34,7 +34,7 @@ export function Header() {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16 md:h-20">
           <a href="#home" className="text-xl md:text-2xl font-bold text-foreground">
-            <img src="logo.png" alt="株式会社測天" className="h-8 md:h-10" />
+            <img src="logo.png" alt="株式会社 測天" className="h-8 md:h-10" />
           </a>
 
           {/* Desktop Navigation */}

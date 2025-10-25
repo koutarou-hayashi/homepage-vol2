@@ -4,7 +4,7 @@ export function Footer() {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           <div>
-            <h3 className="text-xl font-bold mb-4">株式会社サンプル</h3>
+            <h3 className="text-xl font-bold mb-4">株式会社 測天</h3>
             <p className="text-sm text-primary-foreground/80">
               〒100-0001
               <br />
@@ -75,7 +75,7 @@ export function Footer() {
         </div>
 
         <div className="border-t border-primary-foreground/20 pt-8 text-center text-sm text-primary-foreground/80">
-          <p>&copy; 2025 株式会社サンプル All rights reserved.</p>
+          <p>&copy; 2025 株式会社 測天 All rights reserved.</p>
         </div>
       </div>
     </footer>
