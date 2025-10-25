@@ -1,21 +1,21 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Code, Cloud, Smartphone, LineChart } from "lucide-react"
+import { Ruler, ClipboardList, Code } from "lucide-react"
 
 const services = [
   {
-    icon: Code,
+    icon: Ruler,
     title: "測量業務",
     description:
       "お客様の事業規模に合わせた、高精度な測量技術を提供します。品質とスピードで、あらゆるプロジェクトの確実な基盤を築きます。",
   },
   {
-    icon: Cloud,
+    icon: ClipboardList,
     title: "調査業務",
     description:
       "お客様の目的に合わせた、徹底した調査と分析を提供します。リスクの特定から最適な計画立案まで、幅広くサポートいたします。",
   },
   {
-    icon: Smartphone,
+    icon: Code,
     title: "システム開発",
     description:
       "お客様のニーズに合わせた、高品質なシステム開発を提供します。業務効率化から新規事業立ち上げまで、幅広く対応いたします。",
