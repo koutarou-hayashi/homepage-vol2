@@ -33,9 +33,7 @@ export function AccessSection() {
                     <div>
                       <p className="font-medium mb-1">最寄り駅</p>
                       <p className="text-muted-foreground">
-                        東京メトロ千代田線「二重橋前駅」徒歩3分
-                        <br />
-                        JR「東京駅」徒歩8分
+                        JR中央本線「多治見駅」徒歩20分
                       </p>
                     </div>
                   </div>
@@ -45,9 +43,9 @@ export function AccessSection() {
                     <div>
                       <p className="font-medium mb-1">営業時間</p>
                       <p className="text-muted-foreground">
-                        平日 9:00 - 18:00
+                        平日 8:30 - 17:30
                         <br />
-                        (土日祝日は休業)
+                        (土日祝日は定休日)
                       </p>
                     </div>
                   </div>
