@@ -7,7 +7,7 @@ export function HeroSection() {
       id="home"
       className="relative min-h-screen flex items-center justify-center bg-primary text-primary-foreground"
     >
-      <div className="absolute inset-0 bg-[url('/modern-office-building.png')] bg-cover bg-center opacity-20" />
+      <div className="absolute inset-0 bg-[url('/top-back.png')] bg-cover bg-center" />
 
       <div className="relative container mx-auto px-4 text-center">
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 text-balance">
