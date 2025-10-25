@@ -10,8 +10,8 @@ const _geistMono = Geist_Mono({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "株式会社 測天 | 企業ホームページ",
   description:
-    "株式会社 測天の公式ホームページ。システム開発、クラウドソリューション、ITコンサルティングなど、最先端の技術とサービスを提供しています。",
-  generator: "v0.app",
+    "株式会社 測天の公式ホームページ。測量業務、調査業務、システム開発など、最先端の技術とサービスを提供しています。",
+  generator: "Next.js",
 }
 
 export default function RootLayout({
