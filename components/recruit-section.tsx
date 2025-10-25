@@ -1,46 +1,51 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { Briefcase, GraduationCap, Heart, TrendingUp } from "lucide-react"
+import { Briefcase, Heart, Clock, TrendingUp } from "lucide-react"
 
 const benefits = [
   {
     icon: TrendingUp,
-    title: "キャリア成長",
+    title: "給与、昇給、賞与",
     description: "充実した研修制度とキャリアパス",
   },
   {
+    icon: Clock,
+    title: "勤務時間",
+    description: "平日 8:30 - 17:30（標準労働時間 8時間・休憩 1時間）",
+  },
+  // {
+  //   icon: GraduationCap,
+  //   title: "学習支援",
+  //   description: "資格取得支援・書籍購入補助",
+  // },
+  {
     icon: Heart,
-    title: "ワークライフバランス",
+    title: "諸手当",
     description: "フレックスタイム制・リモートワーク可",
   },
   {
-    icon: GraduationCap,
-    title: "学習支援",
-    description: "資格取得支援・書籍購入補助",
-  },
-  {
     icon: Briefcase,
-    title: "充実の福利厚生",
+    title: "福利厚生",
     description: "各種社会保険完備・住宅手当",
   },
 ]
 
 const positions = [
   {
-    title: "システムエンジニア",
-    type: "正社員",
-    description: "Webアプリケーション開発、システム設計・開発を担当していただきます。",
+    title: "測量士",
+    type: "正社員 (試用期間：６ヶ月）",
+    description: "測量業務を担当していただきます。",
   },
-  {
-    title: "フロントエンドエンジニア",
-    type: "正社員",
-    description: "React、Next.jsを使用したモダンなWebアプリケーション開発を担当していただきます。",
-  },
-  {
-    title: "プロジェクトマネージャー",
-    type: "正社員",
-    description: "プロジェクト全体の管理、クライアント折衝を担当していただきます。",
-  },
+  // {
+  //   title: "フロントエンドエンジニア",
+  //   type: "正社員",
+  //   description: "React、Next.jsを使用したモダンなWebアプリケーション開発を担当していただきます。",
+  // },
+  // {
+  //   title: "プロジェクトマネージャー",
+  //   type: "正社員",
+  //   description: "プロジェクト全体の管理、クライアント折衝を担当していただきます。",
+  // },
 ]
 
 export function RecruitSection() {
