@@ -11,14 +11,14 @@ export function HeroSection() {
 
       <div className="relative container mx-auto px-4 text-center">
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 text-balance">
-          未来を創造する
+          最新技術で
           <br />
-          イノベーション企業
+          未来を創造する会社
         </h1>
         <p className="text-lg md:text-xl lg:text-2xl mb-8 text-primary-foreground/90 max-w-3xl mx-auto text-balance">
           私たちは、最先端の技術とサービスで
-          <br className="hidden md:block" />
-          お客様のビジネスを成功へと導きます
+          <br />
+          社会の「信頼」と「未来」を想像します
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Button size="lg" variant="secondary" asChild>

@@ -29,7 +29,7 @@ export function AboutSection() {
                   </p>
                   <div className="text-right">
                     <p className="font-bold text-lg">代表取締役社長</p>
-                    <p className="text-2xl font-bold mt-2">山田 太郎</p>
+                    <p className="text-2xl font-bold mt-2">林 洋佐</p>
                   </div>
                 </div>
               </div>
@@ -57,7 +57,7 @@ export function AboutSection() {
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
                   <dt className="font-bold text-muted-foreground">代表者</dt>
-                  <dd className="sm:col-span-2">代表取締役社長 山田 太郎</dd>
+                  <dd className="sm:col-span-2">代表取締役社長 林 洋佐</dd>
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
                   <dt className="font-bold text-muted-foreground">従業員数</dt>
