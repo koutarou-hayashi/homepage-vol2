@@ -11,7 +11,7 @@ export function HeroSection() {
 
       <div className="relative container mx-auto px-4 text-center">
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 text-balance">
-          最新技術で
+          最新の測量技術で
           <br />
           未来を創造する会社
         </h1>
