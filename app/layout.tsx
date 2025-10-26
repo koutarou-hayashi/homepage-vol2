@@ -12,6 +12,17 @@ export const metadata: Metadata = {
   description:
     "株式会社 測天の公式ホームページ。測量業務、調査業務、システム開発など、最先端の技術とサービスを提供しています。",
   generator: "Next.js",
+  icons: {
+    icon: '/favicon.ico',
+    shortcut: '/favicon.ico',
+    apple: '/favicon.ico',
+    other: [
+      {
+        rel: 'mask-icon',
+        url: '/favicon.ico',
+      },
+    ],
+  },
 }
 
 export default function RootLayout({
