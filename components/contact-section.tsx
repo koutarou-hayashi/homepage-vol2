@@ -16,11 +16,56 @@ export function ContactSection() {
     message: "",
   })
 
-  const handleSubmit = (e: React.FormEvent) => {
+  // 送信中の状態を管理するためのステートを追加
+  const [isSubmitting, setIsSubmitting] = useState(false)
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
+
+    // 処理中に二重送信を防ぐ
+    if (isSubmitting) return
+
+    setIsSubmitting(true)
     // フォーム送信処理をここに実装
-    console.log("Form submitted:", formData)
-    alert("お問い合わせを受け付けました。担当者より折り返しご連絡いたします。")
+    try {
+      // 1. APIエンドポイントを設定（実際のエンドポイントに置き換えてください）
+      const apiEndpoint = '/api/contact'; 
+
+      // 2. データの送信
+      const response = await fetch(apiEndpoint, {
+          method: 'POST',
+          headers: {
+              'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(formData),
+      });
+
+      // 3. レスポンスの確認
+      if (response.ok) {
+          // 成功した場合
+          alert("お問い合わせを受け付けました。担当者より折り返しご連絡いたします。");
+          
+          // フォームをリセット
+          setFormData({
+              name: "",
+              email: "",
+              phone: "",
+              inquiryType: "",
+              message: "",
+          });
+      } else {
+          // API側でエラーコードが返された場合
+          console.error("Submission failed:", response.statusText);
+          alert("送信に失敗しました。時間をおいて再度お試しいただくか、お電話にてご連絡ください。");
+      }
+  } catch (error) {
+      // ネットワークエラーなど、予期せぬエラーが発生した場合
+      console.error("Network error:", error);
+      alert("通信エラーが発生しました。インターネット接続を確認し、再度お試しください。");
+  } finally {
+      // 処理が完了したら送信中ステートを解除
+      setIsSubmitting(false);
+  }
   }
 
   return (
@@ -130,9 +175,18 @@ export function ContactSection() {
                     />
                   </div>
 
-                  <Button type="submit" size="lg" className="w-full">
-                    <Send className="h-4 w-4 mr-2" />
-                    送信する
+                  <Button type="submit" size="lg" className="w-full" disabled={isSubmitting}>
+                    {isSubmitting ? (
+                      <>
+                        {/* スピナーアイコンなどを配置することが多い */}
+                        送信中...
+                      </>
+                    ) : (
+                      <>
+                        <Send className="h-4 w-4 mr-2" />
+                        送信する
+                      </>
+                    )}
                   </Button>
                 </form>
               </CardContent>
