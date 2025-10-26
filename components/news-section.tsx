@@ -74,7 +74,7 @@ export function NewsSection() {
                     <Calendar className="h-4 w-4" />
                     <span>{news.date}</span>
                   </div>
-                  <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-primary text-primary-foreground w-fit">
+                  <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-black text-primary-foreground w-fit">
                     {news.category}
                   </span>
                 </div>

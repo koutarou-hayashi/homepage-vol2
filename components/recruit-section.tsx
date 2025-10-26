@@ -183,7 +183,7 @@ export function RecruitSection() {
                   <CardHeader>
                     <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
                       <CardTitle className="text-xl">{position.title}</CardTitle>
-                      <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-primary text-primary-foreground w-fit">
+                      <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-black text-primary-foreground w-fit">
                         {position.type}
                       </span>
                     </div>
@@ -195,7 +195,7 @@ export function RecruitSection() {
               ))}
             </div>
 
-            <Card className="bg-primary text-primary-foreground">
+            <Card className="bg-black text-primary-foreground">
               <CardContent className="p-8 md:p-12 text-center">
                 <h3 className="text-2xl md:text-3xl font-bold mb-4">一緒に働く仲間を募集しています</h3>
                 <p className="text-lg mb-8 text-primary-foreground/90">

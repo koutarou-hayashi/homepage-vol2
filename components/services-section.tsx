@@ -114,7 +114,7 @@ export function ServicesSection() {
                   <div className="w-10 h-10 rounded-full bg-primary text-primary-foreground flex items-center justify-center">
                     <selectedService.icon className="h-5 w-5" />
                   </div>
-                  <DialogTitle className="text-2xl">{selectedService.title} 詳細</DialogTitle>
+                  <DialogTitle className="text-2xl">{selectedService.title} </DialogTitle>
                 </div>
                 <DialogDescription>{selectedService.description}</DialogDescription>
               </DialogHeader>
