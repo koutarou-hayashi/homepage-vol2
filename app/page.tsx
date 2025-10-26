@@ -20,7 +20,7 @@ export default function Home() {
     // 7秒後に showIntro を false に設定
     const timer = setTimeout(() => {
       setShowIntro(false);
-    }, 6800);
+    }, 7000);
 
     // クリーンアップ関数: コンポーネントがアンマウントされる前にタイマーを解除
     return () => clearTimeout(timer);

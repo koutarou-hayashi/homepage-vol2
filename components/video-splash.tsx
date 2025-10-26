@@ -5,7 +5,7 @@ interface VideoSplashProps {
 export function VideoSplash({ onSkip }: VideoSplashProps) {
   return (
     // 画面全体に動画を表示するためのコンテナ
-    <div className="relative w-screen h-screen overflow-hidden bg-black flex items-center justify-center">
+    <div className="relative w-screen h-screen overflow-hidden bg-white flex items-center justify-center">
       
       {/* 動画本体：画面全体を覆い、中央に配置 */}
       <video
