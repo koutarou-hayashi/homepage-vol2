@@ -16,6 +16,7 @@ export function AboutSection() {
             <CardContent className="p-8 md:p-12">
               <div className="flex flex-col md:flex-row gap-8 items-start">
                 <div className="w-32 h-32 md:w-40 md:h-40 rounded-full bg-muted flex-shrink-0 mx-auto md:mx-0 overflow-hidden">
+                  {/* 修正箇所（代表写真を変更） */}
                   <img src="/professional-business-person.png" alt="代表取締役" className="w-full h-full object-cover" />
                 </div>
                 <div className="flex-1">
