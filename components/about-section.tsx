@@ -51,7 +51,7 @@ export function AboutSection() {
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
                   {/* 修正箇所（正確な値の入力） */}
                   <dt className="font-bold text-muted-foreground">資本金</dt>
-                  <dd className="sm:col-span-2">1億円</dd>
+                  <dd className="sm:col-span-2">100万円</dd>
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
                   <dt className="font-bold text-muted-foreground">代表者</dt>
@@ -60,7 +60,7 @@ export function AboutSection() {
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
                   {/* 修正箇所（正確な従業員数の入力） */}
                   <dt className="font-bold text-muted-foreground">従業員数</dt>
-                  <dd className="sm:col-span-2">150名</dd>
+                  <dd className="sm:col-span-2">10名</dd>
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
                   <dt className="font-bold text-muted-foreground">事業内容</dt>
