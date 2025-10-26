@@ -19,7 +19,7 @@ export function AccessSection() {
                   <div className="flex gap-4">
                     <MapPin className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
                     <div>
-                      <p className="font-medium mb-1">本社</p>
+                      <p className="font-medium mb-1">多治見事務所</p>
                       <p className="text-muted-foreground">
                         〒507-0053
                         <br />
