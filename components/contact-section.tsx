@@ -102,7 +102,7 @@ export function ContactSection() {
                     </div>
                     <div>
                       <h3 className="font-bold mb-2">メールでのお問い合わせ</h3>
-                      <p className="text-sm break-all">sokuten8843koutarou@gmail.com</p> {/* 修正箇所（正確なメアドに） */}
+                      <p className="text-sm break-all">sokuten8843@gmail.com</p> {/* 修正箇所（正確なメアドに） */}
                       <p className="text-sm text-muted-foreground mt-2">24時間受付</p>
                     </div>
                   </div>

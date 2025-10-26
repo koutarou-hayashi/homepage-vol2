@@ -58,7 +58,7 @@ export async function POST(request: Request) {
       株式会社 測天
       住所: 〒507-0053 岐阜県多治見市若松町2-5
       電話: 0572-44-9431
-      E-mail: sokuten8843koutarou@gmail.com
+      E-mail: sokuten8843@gmail.com
     `
 
     // 3. メール送信サービスの設定（両方のメールに使用）
