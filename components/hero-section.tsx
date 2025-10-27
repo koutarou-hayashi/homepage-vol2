@@ -5,9 +5,19 @@ export function HeroSection() {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex items-center justify-center bg-primary text-primary-foreground"
+      className="relative min-h-screen flex items-center justify-center text-primary-foreground"
     >
-      <div className="absolute inset-0 bg-[url('/top-back.png')] bg-cover bg-center" />
+      {/* <div className="absolute inset-0 bg-[url('/top-back.png')] bg-cover bg-center" /> */}
+
+      <video
+        className="absolute inset-0 w-full h-full object-cover" // 動画を画面全体に広げ、アスペクト比を維持してクロップ
+        autoPlay
+        loop
+        muted
+        playsInline
+      >
+        <source src="/sokuten.mp4" type="video/mp4" />
+      </video>
 
       <div className="relative container mx-auto px-4 text-center">
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 text-balance">
