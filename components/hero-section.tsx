@@ -5,12 +5,11 @@ export function HeroSection() {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex items-center justify-center text-primary-foreground"
+      className="relative min-h-screen flex items-center justify-center bg-primary text-primary-foreground"
     >
-      {/* <div className="absolute inset-0 bg-[url('/top-back.png')] bg-cover bg-center" /> */}
 
       <video
-        className="absolute inset-0 w-full h-full object-cover" // 動画を画面全体に広げ、アスペクト比を維持してクロップ
+        className="absolute inset-0 w-full h-full object-cover" 
         autoPlay
         loop
         muted
