@@ -15,10 +15,10 @@ export function AboutSection() {
           <Card>
             <CardContent className="p-8 md:p-12">
               <div className="flex flex-col md:flex-row gap-8 items-start">
-                <div className="w-32 h-32 md:w-40 md:h-40 rounded-full bg-muted flex-shrink-0 mx-auto md:mx-0 overflow-hidden">
+                {/* <div className="w-32 h-32 md:w-40 md:h-40 rounded-full bg-muted flex-shrink-0 mx-auto md:mx-0 overflow-hidden"> */}
                   {/* 修正箇所（代表写真を変更） */}
-                  <img src="/professional-business-person.png" alt="代表取締役" className="w-full h-full object-cover" />
-                </div>
+                  {/* <img src="/professional-business-person.png" alt="代表取締役" className="w-full h-full object-cover" /> */}
+                {/* </div> */}
                 <div className="flex-1">
                   <p className="text-base md:text-lg leading-relaxed mb-6">
                   株式会社測天は、測量の語源である測天量地（天を測る・地を量る）よりグロ－バルな測量技術を提供することを経営理念として社名としました。創業以来、最新鋭の測量機器（GNSSや地上型３Dレーザ－スキャナ－等）を駆使してさまざまな場面で結果を出してきました。これからも社員の知恵と知識を出し合い総力を上げて、お客様に満足していただけるような成果に加え付加価値をご提供することで社会に貢献してまいります。
