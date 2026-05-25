@@ -3,13 +3,13 @@ import { Button } from "@/components/ui/button"
 import { Menu, X } from "lucide-react"
 
 const navItems = [
-  { name: "ホーム", href: "#home" },
-  { name: "お知らせ", href: "#news" },
-  { name: "会社案内", href: "#about" },
-  { name: "業務内容", href: "#services" },
-  { name: "アクセス", href: "#access" },
-  { name: "お問い合わせ", href: "#contact" },
-  { name: "求人案内", href: "#recruit" },
+  { name: "ホーム", href: "/#home" },
+  { name: "お知らせ", href: "/#news" },
+  { name: "会社案内", href: "/#about" },
+  { name: "業務内容", href: "/#services" },
+  { name: "アクセス", href: "/#access" },
+  { name: "お問い合わせ", href: "/#contact" },
+  { name: "求人案内", href: "/#recruit" },
 ]
 
 export function Header() {

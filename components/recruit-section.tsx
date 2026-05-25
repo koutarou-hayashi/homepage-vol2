@@ -202,7 +202,7 @@ export function RecruitSection() {
                   詳細な募集要項は、エントリーフォームよりご確認ください
                 </p>
                 <Button size="lg" variant="secondary" asChild>
-                  <a href="#entry-form">エントリーする</a>
+                  <a href="/entry-page">エントリーする</a>
                 </Button>
               </CardContent>
             </Card>
