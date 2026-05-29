@@ -44,6 +44,10 @@ export function AboutSection() {
                   <dd className="sm:col-span-2">株式会社 測天</dd>
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
+                  <dt className="font-bold text-muted-foreground">代表者</dt>
+                  <dd className="sm:col-span-2">代表取締役社長 林 洋佐</dd>
+                </div>
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
                   {/* 修正箇所（正確な設立日の入力） */}
                   <dt className="font-bold text-muted-foreground">設立</dt>
                   <dd className="sm:col-span-2">2007年9月1日</dd>
@@ -52,10 +56,6 @@ export function AboutSection() {
                   {/* 修正箇所（正確な値の入力） */}
                   <dt className="font-bold text-muted-foreground">資本金</dt>
                   <dd className="sm:col-span-2">100万円</dd>
-                </div>
-                <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
-                  <dt className="font-bold text-muted-foreground">代表者</dt>
-                  <dd className="sm:col-span-2">代表取締役社長 林 洋佐</dd>
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
                   {/* 修正箇所（正確な従業員数の入力） */}
