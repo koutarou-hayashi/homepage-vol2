@@ -16,12 +16,12 @@ export function AboutSection() {
             <CardContent className="p-8 md:p-12">
               <div className="flex flex-col md:flex-row gap-8 items-start">
                 {/* <div className="w-32 h-32 md:w-40 md:h-40 rounded-full bg-muted flex-shrink-0 mx-auto md:mx-0 overflow-hidden"> */}
-                  {/* 修正箇所（代表写真を変更） */}
-                  {/* <img src="/professional-business-person.png" alt="代表取締役" className="w-full h-full object-cover" /> */}
+                {/* 修正箇所（代表写真を変更） */}
+                {/* <img src="/professional-business-person.png" alt="代表取締役" className="w-full h-full object-cover" /> */}
                 {/* </div> */}
                 <div className="flex-1">
                   <p className="text-base md:text-lg leading-relaxed mb-6">
-                  株式会社測天は、測量の語源である測天量地（天を測る・地を量る）よりグロ－バルな測量技術を提供することを経営理念として社名としました。創業以来、最新鋭の測量機器（GNSSや地上型３Dレーザ－スキャナ－等）を駆使してさまざまな場面で結果を出してきました。これからも社員の知恵と知識を出し合い総力を上げて、お客様に満足していただけるような成果に加え付加価値をご提供することで社会に貢献してまいります。
+                    株式会社測天は、測量の語源である測天量地（天を測る・地を量る）よりグロ－バルな測量技術を提供することを経営理念として社名としました。創業以来、最新鋭の測量機器（GNSSや地上型３Dレーザ－スキャナ－等）を駆使してさまざまな場面で結果を出してきました。これからも社員の知恵と知識を出し合い総力を上げて、お客様に満足していただけるような成果に加え付加価値をご提供することで社会に貢献してまいります。
                   </p>
                   <div className="text-right">
                     <p className="font-bold text-lg">代表取締役社長</p>
@@ -46,7 +46,7 @@ export function AboutSection() {
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
                   {/* 修正箇所（正確な設立日の入力） */}
                   <dt className="font-bold text-muted-foreground">設立</dt>
-                  <dd className="sm:col-span-2">2010年4月1日</dd>
+                  <dd className="sm:col-span-2">2007年9月1日</dd>
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
                   {/* 修正箇所（正確な値の入力） */}
@@ -71,6 +71,16 @@ export function AboutSection() {
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
                   <dt className="font-bold text-muted-foreground">所在地</dt>
                   <dd className="sm:col-span-2">
+                    （本社）
+                    <br />
+                    〒507-0064
+                    <br />
+                    岐阜県多治見市北丘町5-2-197
+                  </dd>
+                  <br />
+                  <dd className="sm:col-span-2">
+                    （多治見営業所）
+                    <br />
                     〒507-0053
                     <br />
                     岐阜県多治見市若松町2-5
