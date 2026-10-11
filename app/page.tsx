@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react'
 import { Header } from "@/components/header"
 import { HeroSection } from "@/components/hero-section"
-import { NewsSection } from "@/components/news-section"
+// import { NewsSection } from "@/components/news-section"
 import { AboutSection } from "@/components/about-section"
 import { ServicesSection } from "@/components/services-section"
 import { AccessSection } from "@/components/access-section"
@@ -37,7 +37,7 @@ export default function Home() {
     <main className="min-h-screen">
       <Header />
       <HeroSection />
-      <NewsSection />
+      {/* <NewsSection /> */}
       <AboutSection />
       <ServicesSection />
       <AccessSection />
