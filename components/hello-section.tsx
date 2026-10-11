@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button"
 import { ChevronDown } from "lucide-react"
 
-export function HeroSection() {
+export function HelloSection() {
   return (
     <section
       id="home"
