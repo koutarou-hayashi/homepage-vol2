@@ -3,7 +3,6 @@
 import { useState, useEffect } from 'react'
 import { Header } from "@/components/header"
 import { HelloSection } from "@/components/hello-section"
-// import { NewsSection } from "@/components/news-section"
 import { AboutSection } from "@/components/about-section"
 import { ServicesSection } from "@/components/services-section"
 import { AccessSection } from "@/components/access-section"
@@ -13,28 +12,41 @@ import { Footer } from "@/components/footer"
 import { VideoSplash } from "@/components/video-splash"
 
 export default function Home() {
-  const [showIntro, setShowIntro] = useState<boolean>(true);
+  // localStorage をチェックして初回訪問か判定
+  const [showIntro, setShowIntro] = useState(false)
+  const [isReady, setIsReady] = useState(false)
 
-  // ページロード時に一度だけ実行
   useEffect(() => {
-    // 7秒後に showIntro を false に設定
+    const hasSeenIntro = localStorage.getItem("hasSeenIntro")
+    if (!hasSeenIntro) {
+      setShowIntro(true)
+    }
+    setIsReady(true)
+  }, [])
+
+  useEffect(() => {
+    if (!showIntro) return
     const timer = setTimeout(() => {
-      setShowIntro(false);
-    }, 7000);
+      setShowIntro(false)
+      localStorage.setItem("hasSeenIntro", "true")
+    }, 7000)
+    return () => clearTimeout(timer)
+  }, [showIntro])
 
-    // クリーンアップ関数: コンポーネントがアンマウントされる前にタイマーを解除
-    return () => clearTimeout(timer);
-  }, []); 
-
-  // スキップハンドラ
-  const handleSkip = () => setShowIntro(false);
-
-  // イントロ動画表示モード
-  if (showIntro) {
-    return <VideoSplash onSkip={handleSkip} />;
+  const handleSkip = () => {
+    setShowIntro(false)
+    localStorage.setItem("hasSeenIntro", "true")
   }
+
+  // ロード中は何も表示しない（ちらつき防止）
+  if (!isReady) return null
+
+  if (showIntro) {
+    return <VideoSplash onSkip={handleSkip} />
+  }
+
   return (
-    <main className="min-h-screen">
+    <>
       <Header />
       <HelloSection />
       {/* <NewsSection /> */}
@@ -44,6 +56,6 @@ export default function Home() {
       <ContactSection />
       <RecruitSection />
       <Footer />
-    </main>
+    </>
   )
 }
