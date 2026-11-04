@@ -157,7 +157,7 @@ export function RecruitSection() {
                       </div>
                       <DialogTitle className="text-2xl">{selectedBenefit.title}</DialogTitle>
                     </div>
-                    <DialogDescription>詳細をご確認ください</DialogDescription>
+                    {/* <DialogDescription>詳細をご確認ください</DialogDescription> */}
                   </DialogHeader>
 
                   <div className="mt-4 space-y-4 flex-grow overflow-y-auto pr-4">
