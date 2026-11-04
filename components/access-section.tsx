@@ -1,3 +1,6 @@
+"use client"
+
+import { motion } from "framer-motion"
 import { Card, CardContent } from "@/components/ui/card"
 import { MapPin, Train, Clock } from "lucide-react"
 
@@ -5,55 +8,92 @@ export function AccessSection() {
   return (
     <section id="access" className="py-20 md:py-32 bg-muted">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-12 md:mb-16">
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-80px" }}
+          transition={{ duration: 0.7, ease: "easeOut" }}
+          className="text-center mb-12 md:mb-16"
+        >
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">アクセス</h2>
           <p className="text-muted-foreground text-lg">Access</p>
-        </div>
+        </motion.div>
 
         <div className="max-w-5xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            <Card>
-              <CardContent className="p-8">
-                <h3 className="text-xl font-bold mb-6">所在地</h3>
-                <div className="space-y-6">
-                  <div className="flex gap-4">
-                    <MapPin className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
-                    <div>
-                      <p className="font-medium mb-1">多治見営業所</p>
-                      <p className="text-muted-foreground">
-                        〒507-0053
-                        <br />
-                        岐阜県多治見市若松町2-5
-                      </p>
-                    </div>
-                  </div>
+            <motion.div
+              initial={{ opacity: 0, x: -40 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, margin: "-80px" }}
+              transition={{ duration: 0.7, ease: "easeOut" }}
+            >
+              <Card>
+                <CardContent className="p-8">
+                  <h3 className="text-xl font-bold mb-6">所在地</h3>
+                  <div className="space-y-6">
+                    <motion.div
+                      initial={{ opacity: 0, y: 20 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ duration: 0.5, delay: 0.1 }}
+                      className="flex gap-4"
+                    >
+                      <MapPin className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
+                      <div>
+                        <p className="font-medium mb-1">多治見営業所</p>
+                        <p className="text-muted-foreground">
+                          〒507-0053
+                          <br />
+                          岐阜県多治見市若松町2-5
+                        </p>
+                      </div>
+                    </motion.div>
 
-                  <div className="flex gap-4">
-                    <Train className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
-                    <div>
-                      <p className="font-medium mb-1">最寄り駅</p>
-                      <p className="text-muted-foreground">
-                        JR中央本線「多治見駅」徒歩20分
-                      </p>
-                    </div>
-                  </div>
+                    <motion.div
+                      initial={{ opacity: 0, y: 20 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ duration: 0.5, delay: 0.2 }}
+                      className="flex gap-4"
+                    >
+                      <Train className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
+                      <div>
+                        <p className="font-medium mb-1">最寄り駅</p>
+                        <p className="text-muted-foreground">
+                          JR中央本線「多治見駅」徒歩20分
+                        </p>
+                      </div>
+                    </motion.div>
 
-                  <div className="flex gap-4">
-                    <Clock className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
-                    <div>
-                      <p className="font-medium mb-1">営業時間</p>
-                      <p className="text-muted-foreground">
-                        平日 8:30 - 17:30
-                        <br />
-                        (土日祝日は定休日)
-                      </p>
-                    </div>
+                    <motion.div
+                      initial={{ opacity: 0, y: 20 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ duration: 0.5, delay: 0.3 }}
+                      className="flex gap-4"
+                    >
+                      <Clock className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
+                      <div>
+                        <p className="font-medium mb-1">営業時間</p>
+                        <p className="text-muted-foreground">
+                          平日 8:30 - 17:30
+                          <br />
+                          (土日祝日は定休日)
+                        </p>
+                      </div>
+                    </motion.div>
                   </div>
-                </div>
-              </CardContent>
-            </Card>
+                </CardContent>
+              </Card>
+            </motion.div>
 
-            <div className="h-[400px] lg:h-auto rounded-lg overflow-hidden bg-muted">
+            <motion.div
+              initial={{ opacity: 0, x: 40 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, margin: "-80px" }}
+              transition={{ duration: 0.7, ease: "easeOut" }}
+              className="h-[400px] lg:h-auto rounded-lg overflow-hidden bg-muted"
+            >
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3254.539538511828!2d137.11053587588415!3d35.342254248520454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60036af3bf387989%3A0xbc968f6ade72a1de!2z44CSNTA3LTAwNTMg5bKQ6Zic55yM5aSa5rK76KaL5biC6Iul5p2-55S677yS5LiB55uu77yV!5e0!3m2!1sja!2sjp!4v1737937342791!5m2!1sja!2sjp"
                 width="100%"
@@ -64,7 +104,7 @@ export function AccessSection() {
                 referrerPolicy="no-referrer-when-downgrade"
                 title="会社所在地の地図"
               />
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>
