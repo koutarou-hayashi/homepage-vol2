@@ -1,4 +1,7 @@
+"use client"
+
 import { useState } from 'react'
+import { motion } from "framer-motion"
 import Image from "next/image"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog"
@@ -146,32 +149,43 @@ export function ServicesSection() {
   return (
     <section id="services" className="py-20 md:py-32 bg-background">
       <div className="container mx-auto px-4">
-        {/* ... (タイトル部分) ... */}
-        <div className="text-center mb-12 md:mb-16">
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-80px" }}
+          transition={{ duration: 0.7, ease: "easeOut" }}
+          className="text-center mb-12 md:mb-16"
+        >
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">業務内容</h2>
           <p className="text-muted-foreground text-lg">Services</p>
-        </div>
+        </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 max-w-6xl mx-auto">
           {services.map((service, index) => {
             const Icon = service.icon;
             return (
-              // onClick ハンドラを追加し、カーソルをポインターに変更
-              <Card
+              <motion.div
                 key={index}
-                className="hover:shadow-xl transition-shadow cursor-pointer"
-                onClick={() => handleCardClick(service)}
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-50px" }}
+                transition={{ duration: 0.6, delay: index * 0.15, ease: "easeOut" }}
               >
-                <CardHeader>
-                  <div className="w-12 h-12 rounded-lg bg-primary text-primary-foreground flex items-center justify-center mb-4">
-                    <Icon className="h-6 w-6" />
-                  </div>
-                  <CardTitle className="text-xl md:text-2xl">{service.title}</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <CardDescription className="text-base leading-relaxed">{service.description}</CardDescription>
-                </CardContent>
-              </Card>
+                <Card
+                  className="hover:shadow-xl transition-shadow cursor-pointer h-full"
+                  onClick={() => handleCardClick(service)}
+                >
+                  <CardHeader>
+                    <div className="w-12 h-12 rounded-lg bg-primary text-primary-foreground flex items-center justify-center mb-4">
+                      <Icon className="h-6 w-6" />
+                    </div>
+                    <CardTitle className="text-xl md:text-2xl">{service.title}</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <CardDescription className="text-base leading-relaxed">{service.description}</CardDescription>
+                  </CardContent>
+                </Card>
+              </motion.div>
             );
           })}
         </div>
