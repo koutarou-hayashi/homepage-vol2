@@ -1,5 +1,3 @@
-"use client"
-
 import { useState } from 'react'
 import { motion } from "framer-motion"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
@@ -173,7 +171,7 @@ export function RecruitSection() {
                             className="flex items-start gap-3 bg-white rounded-xl p-4 shadow-sm border border-border hover:shadow-md transition-shadow"
                           >
                             <CheckCircle2 className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                            <span className="text-foreground font-medium leading-relaxed whitespace-pre-line">{detail}</span>
+                            <span className="text-slate-900 font-medium leading-relaxed whitespace-pre-line">{detail}</span>
                           </motion.div>
                         ))
                       ) : (
