@@ -1,3 +1,5 @@
+"use client"
+
 import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { Menu, X } from "lucide-react"
@@ -26,13 +28,20 @@ export function Header() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? "bg-background/95 backdrop-blur-sm shadow-sm" : "bg-transparent"
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
+          ? "bg-background/95 backdrop-blur-sm shadow-sm"
+          : "bg-transparent"
         }`}
     >
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16 md:h-20">
-          <a href="#home" className="text-xl md:text-2xl font-bold text-foreground">
-            <img src="logo.png" alt="株式会社 測天" className="h-8 md:h-10" />
+          <a href="#home" className="block">
+            <img
+              src="logo.png"
+              alt="株式会社 測天"
+              className={`h-8 md:h-10 transition-all duration-300 ${isScrolled ? "brightness-100" : "brightness-0 invert"
+                }`}
+            />
           </a>
 
           {/* Desktop Navigation */}
@@ -41,7 +50,10 @@ export function Header() {
               <a
                 key={item.name}
                 href={item.href}
-                className="px-4 py-2 text-sm font-medium text-foreground/80 hover:text-foreground transition-colors"
+                className={`px-4 py-2 text-sm font-medium rounded-md transition-all duration-300 ${isScrolled
+                    ? "text-foreground/80 hover:text-foreground hover:bg-emerald-500 hover:text-white"
+                    : "text-white/90 hover:text-white hover:bg-emerald-500/20 hover:backdrop-blur-sm hover:border-emerald-400/60"
+                  }`}
               >
                 {item.name}
               </a>
@@ -52,16 +64,23 @@ export function Header() {
           <Button
             variant="ghost"
             size="icon"
-            className="lg:hidden hover:bg-primary"
+            className={`lg:hidden transition-colors duration-300 ${isScrolled
+                ? "text-foreground hover:bg-muted"
+                : "text-white hover:bg-white/10"
+              }`}
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
-            {isMobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+            {isMobileMenuOpen ? (
+              <X className="h-6 w-6" />
+            ) : (
+              <Menu className="h-6 w-6" />
+            )}
           </Button>
         </div>
 
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (
-          <nav className="lg:hidden py-4 border-t border-border">
+          <nav className="lg:hidden py-4 border-t border-border bg-background/95 backdrop-blur-sm">
             {navItems.map((item) => (
               <a
                 key={item.name}
