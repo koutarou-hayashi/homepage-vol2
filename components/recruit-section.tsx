@@ -229,13 +229,28 @@ export function RecruitSection() {
               viewport={{ once: true, margin: "-80px" }}
               transition={{ duration: 0.7, ease: "easeOut" }}
             >
-              <Card className="bg-black text-primary-foreground">
-                <CardContent className="p-8 md:p-12 text-center">
-                  <h3 className="text-2xl md:text-3xl font-bold mb-4">一緒に働く仲間を募集しています</h3>
-                  <p className="text-lg mb-8 text-primary-foreground/90">
+              <Card className="relative overflow-hidden border-0 bg-gradient-to-br from-emerald-950 via-emerald-900 to-slate-900 text-white">
+                {/* グリッドパターン */}
+                <div
+                  className="absolute inset-0 opacity-[0.05] pointer-events-none"
+                  style={{
+                    backgroundImage: `linear-gradient(rgba(255,255,255,0.5) 1px, transparent 1px),
+                          linear-gradient(90deg, rgba(255,255,255,0.5) 1px, transparent 1px)`,
+                    backgroundSize: "60px 60px",
+                  }}
+                />
+                <CardContent className="relative z-10 p-8 md:p-12 text-center">
+                  <h3 className="text-2xl md:text-3xl font-bold mb-4">
+                    一緒に働く仲間を募集しています
+                  </h3>
+                  <p className="text-lg mb-8 text-white/80">
                     詳細な募集要項は、エントリーフォームよりご確認ください
                   </p>
-                  <Button size="lg" variant="secondary" asChild>
+                  <Button
+                    size="lg"
+                    className="bg-white text-emerald-900 hover:bg-emerald-500 hover:text-white font-semibold px-8"
+                    asChild
+                  >
                     <a href="/entry-page">エントリーする</a>
                   </Button>
                 </CardContent>
